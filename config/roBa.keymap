@@ -117,7 +117,7 @@
 
         ARROW {
             bindings = <
-&trans          &trans  &trans  &trans  &trans                             &trans          &kp UP_ARROW    &trans           &kp ESC   &trans
+&trans          &trans  &trans  &trans  &trans                             &kp LC(INSERT)  &kp UP_ARROW    &trans           &kp ESC   &trans
 &trans          &trans  &trans  &trans  &trans  &trans      &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME  &trans
 &kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &kp PAGE_DOWN  &trans          &trans          &trans           &kp END   &trans
 &trans          &trans  &trans  &trans  &trans  &trans      &trans         &trans                                                     &trans
