@@ -80,8 +80,6 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            // 追加: スクロールのタップ時間を設定 (20ms)
-            tap-ms = <20>;
         };
     };
 
@@ -96,7 +94,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = &inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
         FUNCTION {
@@ -111,7 +109,7 @@
         NUM {
             bindings = <
 &kp MINUS                   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                                   &kp CARET        &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&kp SLASH                   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
+&kp SLASH                   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENTh
 &mt LEFT_SHIFT KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp EQUAL       &kp HASH         &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
 &trans                      &trans        &trans        &trans        &trans        &trans                       &trans          &trans                                                                       &kp PIPE
             >;
