@@ -102,19 +102,19 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&kp MINUS       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                            &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp SLASH       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTRK   &trans         &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp EQUAL      &trans   &trans  &trans  &trans  &trans  &kp F11
+&kp CARET       &kp NUMBER_0  &kp NUMBER_0  &trans        &trans      &trans         &trans   &trans                          &kp F12
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                                                   &kp HASH         &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&kp SLASH                   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &kp EQUAL                    &kp EQUAL       &kp QUESTION     &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
-&kp CARET                   &kp NUMBER_0  &kp NUMBER_0  &trans        &trans        &trans                       &trans          &trans                                                                       &kp PIPE
+&trans  &trans  &trans         &trans            &kp GRAVE                              &kp HASH         &kp AMPERSAND  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+&trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &trans      &kp UNDERSCORE  &kp EXCLAMATION  &kp AT_SIGN    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
+&trans  &trans  &trans         &trans            &trans     &trans      &kp EQUAL       &kp QUESTION     &kp DOLLAR     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
+&trans  &trans  &trans         &trans            &trans     &trans      &trans          &trans                                                                       &kp PIPE
             >;
         };
 
