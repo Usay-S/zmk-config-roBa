@@ -1,4 +1,5 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -19,6 +20,9 @@
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        
+        // 第1引数: マウスレイヤー番号(5), 第2引数: タイムアウト(1000ms)
+        input-processors = <&zip_temp_layer 5 1000>;
     };
 };
 
@@ -43,6 +47,13 @@
 
 &xiao_serial { status = "disabled"; };
 
+&zip_temp_layer {
+    excluded-positions = <
+        18 // J
+        20 // L
+    >;
+};
+
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
@@ -57,5 +68,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+
+        automouse-layer = <5>;
     };
 };
