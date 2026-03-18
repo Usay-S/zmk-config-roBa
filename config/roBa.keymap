@@ -111,10 +111,10 @@
 
         NUM {
             bindings = <
-&trans  &trans  &kp HASH       &trans            &kp GRAVE                              &kp HASH         &kp AMPERSAND    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&trans  &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &trans      &kp UNDERSCORE  &kp EXCLAMATION  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
-&trans  &trans  &kp LC(X)      &kp LC(C)         &kp LC(V)  &trans      &kp EQUAL       &kp DOLLAR       &kp QUESTION     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
-&trans  &trans  &trans         &trans            &trans     &trans      &trans          &trans                                                                         &kp PIPE
+&trans  &trans     &kp HASH       &trans            &kp GRAVE                              &kp HASH         &kp AMPERSAND    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+&trans  &trans     &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL  &trans      &kp UNDERSCORE  &kp EXCLAMATION  &kp EXCLAMATION  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PERCENT
+&trans  &kp LC(X)  &kp LC(C)      &kp LC(V)         &trans     &trans      &kp EQUAL       &kp DOLLAR       &kp QUESTION     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
+&trans  &trans     &trans         &trans            &trans     &trans      &trans          &trans                                                                         &kp PIPE
             >;
         };
 
