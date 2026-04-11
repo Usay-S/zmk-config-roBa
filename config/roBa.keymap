@@ -56,6 +56,26 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        l_click {
+            bindings = <&mkp MB1>;
+            key-positions = <19 18>;
+        };
+
+        r_click {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
+        };
+
+        p_click {
+            bindings = <&mkp MB4>;
+            key-positions = <6 19>;
+        };
+
+        n_click {
+            bindings = <&mkp MB5>;
+            key-positions = <19 8>;
+        };
     };
 
     macros {
@@ -120,10 +140,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &trans  &trans  &trans  &trans                             &kp LC(INSERT)  &trans          &kp UP_ARROW    &trans           &kp ESC
-&trans          &trans  &trans  &trans  &trans  &trans      &kp PAGE_UP    &kp PG_UP       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &kp PAGE_DOWN  &kp PAGE_DOWN   &trans          &trans          &trans           &kp END
-&trans          &trans  &trans  &trans  &trans  &trans      &trans         &trans                                                           &trans
+&kp ESCAPE      &trans     &trans     &trans     &trans                             &kp LC(INSERT)  &trans          &kp UP_ARROW    &trans           &kp ESC
+&trans          &trans     &trans     &trans     &trans  &trans      &kp PAGE_UP    &kp PG_UP       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp HOME
+&kp LEFT_SHIFT  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans  &trans      &kp PAGE_DOWN  &kp PAGE_DOWN   &trans          &trans          &trans           &kp END
+&trans          &trans     &trans     &trans     &trans  &trans      &trans         &trans                                                           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -131,10 +151,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB4  &trans  &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
